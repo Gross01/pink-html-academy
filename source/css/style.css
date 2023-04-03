@@ -39,4 +39,192 @@
   font-display: swap;
   src: url("../../fonts/opensanslight.woff2") format("woff2"), url("../../fonts/opensanslight.woff") format("woff");
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.page-header {
+  background-color: #1d2631;
+  background-image: url("../../img/back-mobile.png");
+  margin: 0;
+  padding: 0;
+}
+.page-header__main-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.page-header__main-menu--opened-nav {
+  background-color: #283645;
+}
+.main-nav__list {
+  background-color: #283645;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+}
+.app-download__slogan {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+.app-download__button {
+  text-decoration: none;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 18px;
+  width: 280px;
+  padding: 18px 35px;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+}
+.app-download__info {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-content__titles {
+  background-color: #ffffff;
+}
+.main-content__title {
+  margin: 0;
+  padding: 0;
+}
+.main-content__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: inherit;
+  color: #283645;
+}
+.title {
+  font-size: 24px;
+  line-height: 29px;
+  color: #283645;
+  font-weight: 300;
+}
+.advantages {
+  background-color: #f2f2f2;
+}
+.advantages__list {
+  list-style: none;
+  text-decoration: none;
+}
+.advantages__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.advantages__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.benefit {
+  display: none;
+}
+.reviews__list {
+  list-style: none;
+  text-decoration: none;
+}
+.reviews__autor-name {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
+.reviews__blockquote {
+  margin: 0;
+  padding: 0;
+}
+.reviews__autor-info {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.reviews__quote {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.reviews__buttons {
+  display: none;
+}
+.price-rates {
+  background-color: #f2f2f2;
+}
+.price-rates__caption {
+  background-color: #283645;
+}
+.price-rates__caption--blank {
+  background-color: transparent;
+}
+.price-rates__rate {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.price-rates__price {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.price-rates__cell {
+  background-color: #ffffff;
+}
+.price-rates__attribute {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contacts__title {
+  margin: 0;
+  padding: 0;
+}
+.contacts__list {
+  list-style: none;
+  text-decoration: none;
+}
+.contacts__span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.contacts__info {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #d22856;
+}
+.social-list {
+  list-style: none;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
