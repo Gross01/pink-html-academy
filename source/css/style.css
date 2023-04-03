@@ -58,6 +58,12 @@
 .page-header__main-menu--opened-nav {
   background-color: #283645;
 }
+.page-header__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ffffff;
+}
 .main-nav__list {
   background-color: #283645;
   list-style: none;
@@ -226,5 +232,79 @@
 .social-list {
   list-style: none;
   text-decoration: none;
+}
+.contest-form__span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.contest-form__achievements {
+  background-color: #f2f2f2;
+  border: none;
+}
+.contest-form__contacts {
+  border: none;
+}
+.contest-form__apps {
+  background-color: #f2f2f2;
+  border: none;
+}
+.contest-form__comment {
+  border: none;
+}
+.contest-form__input-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contest-form__text-input {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contest-form__text-input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contest-form__legend {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.contest-form__legend--contacts {
+  display: none;
+}
+.contest-form__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+}
+.contest-form__info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+.contest-form__asterisk {
+  color: #d22856;
+}
+.contest-form__text {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
