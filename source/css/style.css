@@ -1,2 +1,377 @@
-
+* {
+  box-sizing: border-box;
+}
+.page {
+  height: 100%;
+}
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  min-width: 320px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  background-color: #ffffff;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/opensansbold.woff2") format("woff2"), url(../../fonts/opensansbold.woff) format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../../fonts/opensanslight.woff2") format("woff2"), url("../../fonts/opensanslight.woff") format("woff");
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.page-header {
+  background-color: #1d2631;
+  background-image: url("../../img/back-mobile.png");
+  margin: 0;
+  padding: 0;
+}
+.page-header__main-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.page-header__main-menu--opened-nav {
+  background-color: #283645;
+}
+.page-header__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ffffff;
+}
+.main-nav__list {
+  background-color: #283645;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+}
+.app-download__slogan {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+.app-download__button {
+  text-decoration: none;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 18px;
+  width: 280px;
+  padding: 18px 35px;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+}
+.app-download__info {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-content__titles {
+  background-color: #ffffff;
+}
+.main-content__title {
+  margin: 0;
+  padding: 0;
+}
+.main-content__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: inherit;
+  color: #283645;
+}
+.title {
+  font-size: 24px;
+  line-height: 29px;
+  color: #283645;
+  font-weight: 300;
+}
+.advantages {
+  background-color: #f2f2f2;
+}
+.advantages__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.advantages__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.advantages__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.benefit {
+  display: none;
+}
+.reviews__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.reviews__autor-name {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
+.reviews__blockquote {
+  margin: 0;
+  padding: 0;
+}
+.reviews__autor-info {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.reviews__quote {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.reviews__buttons {
+  display: none;
+}
+.price-rates {
+  background-color: #f2f2f2;
+}
+.price-rates__caption {
+  background-color: #283645;
+}
+.price-rates__caption--blank {
+  background-color: transparent;
+}
+.price-rates__rate {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.price-rates__price {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.price-rates__cell {
+  background-color: #ffffff;
+}
+.price-rates__attribute {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contacts__title {
+  margin: 0;
+  padding: 0;
+}
+.contacts__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.contacts__span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.contacts__info {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #d22856;
+}
+.social-list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.contest-form__span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.contest-form__achievements {
+  background-color: #f2f2f2;
+  border: none;
+}
+.contest-form__contacts {
+  border: none;
+}
+.contest-form__apps {
+  background-color: #f2f2f2;
+  border: none;
+}
+.contest-form__comment {
+  border: none;
+}
+.contest-form__input-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contest-form__text-input {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contest-form__text-input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+.contest-form__legend {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.contest-form__legend--contacts {
+  display: none;
+}
+.contest-form__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+}
+.contest-form__info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+.contest-form__asterisk {
+  color: #d22856;
+}
+.contest-form__text {
+  display: none;
+}
+.gallery__figure {
+  margin: 0;
+  padding: 0;
+}
+.gallery__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.gallery__figcaption {
+  background-color: #f2f2f2;
+}
+.gallery__name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #283645;
+}
+.gallery__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+.gallery__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645;
+}
+.gallery__count {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.photo-edit {
+  background-color: #f2f2f2;
+}
+.photo-edit__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: transparent;
+  color: #d22856;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+}
+.photo-edit__button--reset {
+  color: #283645;
+  border: 3px solid #283645;
+  border-radius: 30px;
+}
+.photo-edit__button:disabled {
+  opacity: 0.1;
+}
 /*# sourceMappingURL=style.css.map */
