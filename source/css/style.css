@@ -129,6 +129,8 @@
 .advantages__list {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .advantages__title {
   font-size: 18px;
@@ -147,6 +149,8 @@
 .reviews__list {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .reviews__autor-name {
   margin: 0;
@@ -217,6 +221,8 @@
 .contacts__list {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .contacts__span {
   font-size: 18px;
@@ -232,6 +238,8 @@
 .social-list {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .contest-form__span {
   font-size: 14px;
@@ -306,5 +314,64 @@
 }
 .contest-form__text {
   display: none;
+}
+.gallery__figure {
+  margin: 0;
+  padding: 0;
+}
+.gallery__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.gallery__figcaption {
+  background-color: #f2f2f2;
+}
+.gallery__name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #283645;
+}
+.gallery__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+.gallery__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645;
+}
+.gallery__count {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.photo-edit {
+  background-color: #f2f2f2;
+}
+.photo-edit__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: transparent;
+  color: #d22856;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+}
+.photo-edit__button--reset {
+  color: #283645;
+  border: 3px solid #283645;
+  border-radius: 30px;
+}
+.photo-edit__button:disabled {
+  opacity: 0.1;
 }
 /*# sourceMappingURL=style.css.map */
