@@ -2,26 +2,31 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: 'Pink'</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper page-header__main-menu">
-        <a class="page-header__logo logo" href="#">
-          <img src="" alt="Логотип сайта 'Pink'">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-          </ul>
-        </nav>
+      <div class="page-header__main-menu-wrapper">
+        <div class="page-header__main-menu container">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo" href="#">
+              <img src="" alt="Логотип сайта 'Pink'" width="74" height="23">
+            </a>
+            <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div class="page-header__wrapper app-download">
+      <div class="page-header__wrapper app-download container">
         <p class="app-download__slogan">Взгляните на жизнь иначе!</p>
         <div class="app-download__wrapper">
           <a class="app-download__button" href="#">Скачать приложение</a>
