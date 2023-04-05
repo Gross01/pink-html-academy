@@ -1,5 +1,54 @@
+.reviews {
+  background-color: #ffffff;
+}
+
+.reviews__wrapper {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 109px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 193px;
+    padding-bottom: 52px;
+  }
+}
+
 .reviews__list {
   .list-normalize();
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
+  }
+}
+
+.reviews__autor {
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    margin-bottom: 0;
+  }
 }
 
 .reviews__autor-name {
@@ -8,18 +57,42 @@
   font-weight: @font-weight-bold;
   line-height: 30px;
   color: #000000;
-}
 
-.reviews__blockquote {
-  .indent-normalize();
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .reviews__autor-info {
+  .indent-normalize();
   display: none;
   font-size: 14px;
   font-weight: @font-weight-normal;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews__blockquote {
+  .indent-normalize();
+  margin-bottom: 47px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .reviews__quote {
@@ -28,8 +101,29 @@
   font-weight: @font-weight-normal;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews__toggles {
+  .indent-normalize();
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .reviews__buttons {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 213px;
+    width: 100%;
+  }
 }
