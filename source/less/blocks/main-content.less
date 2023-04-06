@@ -7,11 +7,11 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    padding: 58px 0 47px 0;
+    padding: 58px 20px 47px 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 0 72px 0;
+    padding: 77px 20px 72px 20px;
   }
 }
 
@@ -43,10 +43,42 @@
   }
 }
 
+.main-content__subtitle-wrapper {
+  margin: 55px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 100px auto 82px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 99px auto 96px auto;
+  }
+}
+
 .main-content__subtitle {
   .indent-normalize();
   font-size: 14px;
   font-weight: @font-weight-normal;
   line-height: inherit;
   color: #283645;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 492px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 756px;
+  }
+}
+
+.main-content__ask {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
