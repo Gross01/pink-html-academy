@@ -1,20 +1,97 @@
+.app-download {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.app-download__wrapper {
+  padding: 28px 0 38px 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 119px 0;
+    align-items: flex-start;
+    width: 308px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 130px 0;
+    align-items: flex-start;
+    width: 308px;
+  }
+}
+
 .app-download__slogan {
   color: #ffffff;
   font-weight: @font-weight-light;
   font-size: 24px;
   .indent-normalize();
+  text-align: center;
+  margin-bottom: 320px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 39px;
+    margin-top: 28px;
+    width: 308px;
+    align-self: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 16px;
+    margin-bottom: 51px;
+    width: 308px;
+  }
 }
 
 .app-download__button {
   .link-normalize();
+  display: inline-block;
   background: transparent;
   color: #ffffff;
   font-weight: @font-weight-bold;
   line-height: 18px;
-  width: 280px;
+  text-align: center;
+  width: 100%;
   padding: 18px 35px;
   border: 3px solid #ffffff;
   border-radius: 29px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.app-download__list {
+  .list-normalize();
+  display: flex;
+  width: 100%;
+  margin-bottom: 28px;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .app-download__info {
@@ -22,4 +99,13 @@
   font-weight: @font-weight-normal;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }

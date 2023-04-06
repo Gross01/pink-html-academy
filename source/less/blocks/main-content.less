@@ -1,9 +1,46 @@
 .main-content__titles {
   background-color: #ffffff;
+  padding: 46px 0 36px 0;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 0 47px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 77px 0 72px 0;
+  }
 }
 
 .main-content__title {
   .indent-normalize();
+
+  &:nth-child(1) {
+    max-width: 210px;
+  }
+
+  &:nth-child(2) {
+    margin-top: 44px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(2) {
+      margin-top: 5px;
+    }
+
+    &:nth-child(1) {
+      max-width: 700px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      max-width: 900px;
+    }
+  }
 }
 
 .main-content__subtitle {

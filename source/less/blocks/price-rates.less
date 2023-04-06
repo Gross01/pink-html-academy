@@ -1,12 +1,58 @@
 .price-rates {
   background-color: #f2f2f2;
+  min-width: 100%;
+}
+
+.price-rates__wrapper {
+  width: 276px;
+  padding: 101px 50% 46px 50%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    padding: 101px 20px 70px 20px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 159px 0 98px 0;
+    width: 940px;
+  }
+}
+
+.price-rates__table {
+  position: relative;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    transform: none;
+  }
 }
 
 .price-rates__caption {
   background-color: #283645;
+  min-width: 276px;
+  padding: 19px 0 35px 0;
 
   &--blank {
     background-color: transparent;
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--blank {
+      display: inline-block;
+    }
+    padding: 16px 0 16px 0;
+    min-width: 152px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 0 25px 0;
+    min-width: 233px;
   }
 }
 
@@ -16,6 +62,10 @@
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price-rates__price {
@@ -24,10 +74,37 @@
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .price-rates__cell {
   background-color: #ffffff;
+  padding: 19px 0;
+
+  &:first-child {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:first-child {
+      display: inline-block;
+      width: 100%;
+      padding-left: 17px;
+    }
+
+    padding: 9px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 16px 0;
+
+    &:first-child {
+      padding-left: 22px;
+    }
+  }
 }
 
 .price-rates__attribute {
@@ -35,4 +112,19 @@
   font-weight: @font-weight-normal;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.price-rates__toggles {
+  .indent-normalize();
+  display: flex;
+  align-self: center;
+  margin-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

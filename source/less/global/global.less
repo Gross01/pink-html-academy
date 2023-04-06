@@ -6,17 +6,16 @@
   height: 100%;
 
   &__body {
+    .indent-normalize();
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     min-height: 100%;
-    min-width: 320px;
+    min-width: @mobile-width;
     font-family: @font-main;
     font-weight: @font-weight-normal;
-    margin: 0;
-    padding: 0;
     font-size: @font-size-main;
     line-height: @line-height-main;
-    color: @color-main;
+    color: @font-color-main;
     background-color: @bg-color-main;
   }
 }
