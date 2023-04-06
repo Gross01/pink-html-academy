@@ -1,9 +1,36 @@
 .gallery__figure {
-  .indent-normalize();
+  margin: 0;
+
+  &--best {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--best {
+      margin-bottom: 50px;
+      width: 100%;
+    }
+  }
 }
 
 .gallery__list {
-  .list-normalize();
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 54px;
+  }
 }
 
 .gallery__figcaption {
