@@ -19,18 +19,23 @@
 }
 
 .benefit__timer {
+  position: relative;
   width: 238px;
   height: 276px;
   margin-top: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/icons/timer-tablet.svg");
+  background-repeat: no-repeat;
 
   @media (min-width: @desktop-width) {
     width: 298px;
     height: 345px;
     margin-top: 17px;
     align-self: flex-start;
+    background-image: url("../img/icons/timer.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -39,6 +44,27 @@
   font-weight: @font-weight-bold;
   line-height: 163px;
   color: #d22856;
+  margin-top: 30px;
+
+  &::after {
+    content: url("../img/icons/diagram-fill-tablet.svg");
+    position: absolute;
+    top: 56px;
+    left: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    font-size: 120px;
+    line-height: 163px;
+
+    &::after {
+      content: url("../img/icons/diagram-fill.svg");
+      position: absolute;
+      top: 70px;
+      left: 24px;
+    }
+  }
 }
 
 .benefit__info {
@@ -60,7 +86,7 @@
   line-height: 36px;
   color: #000000;
   max-width: 168px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 
   @media (min-width: @desktop-width) {
     max-width: 400px;
@@ -75,10 +101,10 @@
   font-weight: @font-weight-normal;
   line-height: 24px;
   color: #283645;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 47px;
+    margin-bottom: 37px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -89,6 +115,14 @@
   font-weight: @font-weight-normal;
   line-height: 24px;
   color: #d22856;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &:active {
+    color: fade(#000000, 30%);
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;

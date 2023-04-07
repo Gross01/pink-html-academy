@@ -18,7 +18,7 @@
           </div>
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="#">Главная</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
@@ -84,6 +84,7 @@
         </div>
       </article>
       <section class="reviews">
+        <h2 class="visually-hidden">Отзывы наших клиентов</h2>
         <div class="reviews__wrapper slider container">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
@@ -174,7 +175,7 @@
             </tbody>
           </table>
           <p class="price-rates__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--table" type="button"><span class="visually-hidden">1<span></button>
+              <button class="slider__toggle slider__toggle--table" type="button"><span class="visually-hidden">1<span></button>
               <button class="slider__toggle slider__toggle--table slider__toggle--current" type="button"><span class="visually-hidden">2<span></button>
               <button class="slider__toggle slider__toggle--table" type="button"><span class="visually-hidden">3<span></button>
           </p>
@@ -187,21 +188,22 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <span class="contacts__span">Звоните:</span>
-              <span class="contacts__info">+7 (812) 555-66-66</span>
+              <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
               <span class="contacts__span">Пишите:</span>
-              <span class="contacts__info">mail@htmlacademy.ru</span>
+              <a class="contacts__info" href="malito:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <span class="contacts__span">Приезжайте в гости:</span>
-              <span class="contacts__info">ул. Большая <br> Конюшенная, 19/8</span>
+              <address class="contacts__info address">ул. Большая <br> Конюшенная, 19/8</address>
             </li>
           </ul>
         </div>
       </section>
       <div class="map">
-        <!-- тут будет карта -->
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2233195d859ff8947418a9484e8a41c0e1b95ecad38740eb090245380f372938&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="map__mark"></div>
       </div>
     </main>
     <footer class="page-footer">
@@ -229,5 +231,6 @@
       </div>
     </footer>
     <script src="js/main-nav.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

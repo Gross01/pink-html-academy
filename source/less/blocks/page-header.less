@@ -34,6 +34,16 @@
   &--no-js .page-header__logo-wrapper {
     justify-content: center;
   }
+
+  @media (min-width: @desktop-width) {
+    &--no-js {
+      flex-direction: row;
+    }
+
+    &--no-js .page-header__logo-wrapper {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .page-header__logo-wrapper {
