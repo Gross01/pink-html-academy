@@ -27,6 +27,7 @@
   .indent-normalize();
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -50,9 +51,18 @@
 }
 
 .main-nav__link {
+  .link-normalize();
   color: #ffffff;
   font-size: @font-size-main;
-  font-weight: @font-weight-normal;
+  font-weight: @font-weight-bold;
   line-height: 32px;
-  .link-normalize();
+  text-transform: uppercase;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: fade(#d22856, 30%);
+  }
 }
