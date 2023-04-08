@@ -1897,6 +1897,7 @@
   border: none;
   background-image: url("../img/icons/heart.svg");
   background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 @media (min-width: 660px) {
