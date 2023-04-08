@@ -15,8 +15,9 @@
 
 .gallery__list {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
@@ -24,6 +25,7 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    width: 640px;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,8 +35,24 @@
   }
 }
 
+.gallery__image {
+  &--best {
+    width: 100%;
+  }
+}
+
 .gallery__figcaption {
+  padding: 25px 17px;
   background-color: #f2f2f2;
+
+  &--best {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.gallery__autor {
+  .indent-normalize();
 }
 
 .gallery__name {
@@ -53,10 +71,37 @@
 }
 
 .gallery__description {
+  .indent-normalize();
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #283645;
+  margin-bottom: 10px;
+}
+
+.gallery__likes {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.gallery__like {
+  width: 13px;
+  height: 12px;
+  margin-right: 18px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icons/heart.svg");
+  background-position: center;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }
 
 .gallery__count {
