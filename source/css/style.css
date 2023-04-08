@@ -2050,6 +2050,7 @@
 .photo-edit__filter-button {
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 .photo-edit__filter-button:first-child {
   width: 44px;
