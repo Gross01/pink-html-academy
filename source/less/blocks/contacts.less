@@ -89,3 +89,20 @@
   line-height: 32px;
   color: #d22856;
 }
+
+.address {
+  font-style: normal;
+}
+
+.contacts__item:not(:nth-child(3)) .contacts__info {
+  text-decoration: none;
+
+  &:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(#000000, 30%);
+  }
+}

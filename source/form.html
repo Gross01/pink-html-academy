@@ -20,7 +20,7 @@
             <ul class="main-nav__list">
               <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="#">Конкурс</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
             </ul>
           </nav>
@@ -34,7 +34,7 @@
           <span class="main-content__ask">Пожалуйста, заполните форму ниже:</span>
         </p>
       </div>
-      <form class="contest-form" action="#" method="get">
+      <form class="contest-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="contest-form__initials">
           <div class="contest-form__initials-wrapper">
             <label class="contest-form__label">
@@ -55,45 +55,39 @@
           <div class="contest-form__achievements-wrapper">
             <legend class="contest-form__legend contest-form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
             <label class="contest-form__label contest-form__label--checkbox">
-              <input class="contest-form__input contest-form__input--checkbox" type="checkbox" name="shark-selfie" checked>
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Сделал селфи с акулой</span>
+              <input class="visually-hidden contest-form__input--checkbox" type="checkbox" name="shark-selfie" checked>
+              <span class="contest-form__input-name contest-form__input-name--checkbox">Сделал селфи с акулой</span>
             </label>
             <label class="contest-form__label contest-form__label--checkbox">
-              <input class="contest-form__input contest-form__input--checkbox" type="checkbox" name="hot-beach" checked>
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Обгорел на пляже</span>
+              <input class="visually-hidden contest-form__input--checkbox" type="checkbox" name="hot-beach" checked>
+              <span class="contest-form__input-name contest-form__input-name--checkbox">Обгорел на пляже</span>
             </label>
             <label class="contest-form__label contest-form__label--checkbox">
-              <input class="contest-form__input contest-form__input--checkbox" type="checkbox" name="chuck-norris">
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Видел Чака Норриса</span>
+              <input class="visually-hidden contest-form__input--checkbox" type="checkbox" name="chuck-norris">
+              <span class="contest-form__input-name contest-form__input-name--checkbox">Видел Чака Норриса</span>
             </label>
             <label class="contest-form__label contest-form__label--checkbox">
-              <input class="contest-form__input contest-form__input--checkbox" type="checkbox" name="souvenirs">
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Накупил сувениров</span>
+              <input class="visually-hidden contest-form__input--checkbox" type="checkbox" name="souvenirs">
+              <span class="contest-form__input-name contest-form__input-name--checkbox">Накупил сувениров</span>
             </label>
             <label class="contest-form__label contest-form__label--checkbox">
-              <input class="contest-form__input contest-form__input--checkbox" type="checkbox" name="tower-hold" checked>
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Удержал башню</span>
+              <input class="visually-hidden contest-form__input--checkbox" type="checkbox" name="tower-hold" checked>
+              <span class="contest-form__input-name contest-form__input-name--checkbox">Удержал башню</span>
             </label>
             <label class="contest-form__label contest-form__label--checkbox">
-              <input class="contest-form__input contest-form__input--checkbox" type="checkbox" name="hotel-crush">
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Разгромил отель</span>
+              <input class="visually-hidden contest-form__input--checkbox" type="checkbox" name="hotel-crush">
+              <span class="contest-form__input-name contest-form__input-name--checkbox">Разгромил отель</span>
             </label>
           </div>
         </fieldset>
         <fieldset class="contest-form__contacts">
           <div class="contest-form__contacts-wrapper">
             <legend class="contest-form__legend contest-form__legend--contacts">Контактная информация</legend>
-            <label class="contest-form__label contest-form__label--contacts">
+            <label class="contest-form__label contest-form__label--contacts contest-form__label--tel-number">
               <span class="contest-form__span contest-form__span--contacts">Номер телефона</span>
               <input class="contest-form__text-input contest-form__text-input--contacts contest-form__text-input--tel-number" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
             </label>
-            <label class="contest-form__label contest-form__label--contacts">
+            <label class="contest-form__label contest-form__label--contacts contest-form__label--email">
               <span class="contest-form__span contest-form__span--contacts">Адрес почты</span>
               <input class="contest-form__text-input contest-form__text-input--contacts contest-form__text-input--email" type="email" name="email" placeholder="Введите почту *" required>
             </label>
@@ -103,19 +97,16 @@
           <div class="contest-form__apps-wrapper">
             <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
             <label class="contest-form__label contest-form__label--radio">
-              <input class="contest-form__input contest-form__input--radio" type="radio" name="app" value="IOS" checked>
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Pink для iOS</span>
+              <input class="visually-hidden contest-form__input--radio" type="radio" name="app" value="IOS" checked>
+              <span class="contest-form__input-name contest-form__input-name--radio">Pink для iOS</span>
             </label>
             <label class="contest-form__label contest-form__label--radio">
-              <input class="contest-form__input contest-form__input--radio" type="radio" name="app" value="Android">
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Pink на Android</span>
+              <input class="visually-hidden contest-form__input--radio" type="radio" name="app" value="Android">
+              <span class="contest-form__input-name contest-form__input-name--radio">Pink на Android</span>
             </label>
             <label class="contest-form__label contest-form__label--radio">
-              <input class="contest-form__input contest-form__input--radio" type="radio" name="app" value="Windows">
-              <span class="contest-form__control-mark"></span>
-              <span class="contest-form__input-name">Windows Phone</span>
+              <input class="visually-hidden contest-form__input--radio" type="radio" name="app" value="Windows">
+              <span class="contest-form__input-name contest-form__input-name--radio">Windows Phone</span>
             </label>
           </div>
         </fieldset>
@@ -159,5 +150,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

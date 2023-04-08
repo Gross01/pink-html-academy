@@ -34,6 +34,14 @@
 
   @media (min-width: @desktop-width) {
     width: 688px;
+
+    &::before {
+      content: url("../img/icons/quotes.svg");
+      position: absolute;
+      top: 72px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -123,7 +131,7 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 213px;
+    top: 220px;
     width: 100%;
   }
 }
