@@ -31,8 +31,6 @@
   margin-bottom: 44px;
   width: 172px;
 
-  background-color: #000000;
-
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
@@ -40,6 +38,8 @@
 
 .page-footer__link {
   .link-normalize();
+  display: flex;
+  align-items: center;
 }
 
 .page-footer__span {
@@ -48,4 +48,17 @@
   line-height: 18px;
   color: #283645;
   margin-right: 15px;
+}
+
+.page-footer__icon {
+  fill: #d22856;
+
+  &:hover {
+    fill: #000000;
+  }
+
+  &:active {
+    fill: #000000;
+    opacity: 0.3;
+  }
 }

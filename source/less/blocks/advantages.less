@@ -15,17 +15,39 @@
   padding-top: 87px;
   display: flex;
   justify-content: center;
+  background-image: url("../img/advantages/iphone-screen-mobile.png");
+  background-size: image-size("../img/advantages/iphone-screen-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom -40px;
+
+  @media @retina {
+    background-image: url("../img/advantages/iphone-screen-mobile@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/advantages/iphone-screen-tablet.png");
+    background-size: image-size("../img/advantages/iphone-screen-tablet.png");
+    background-position: left bottom;
+
+    @media @retina {
+      background-image: url("../img/advantages/iphone-screen-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+  }
 
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
     padding-bottom: 49px;
-    padding-top: 89px;
+    padding-top: 65px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: center;
     padding-bottom: 59px;
-    padding-top: 366px;
+    padding-top: 0;
   }
 }
 
@@ -37,7 +59,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    row-gap: 47px;
+    row-gap: 34px;
     text-align: left;
   }
 
@@ -49,11 +71,46 @@
   }
 }
 
-// .advantages__item {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
+.advantages__item {
+  @media (min-width: @desktop-width) {
+    padding-top: 366px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item:nth-child(1) {
+    background-image: url("../img/advantages/iphone-screen-1-desktop.png");
+    background-size: image-size("../img/advantages/iphone-screen-1-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media @retina {
+      background-image: url("../img/advantages/iphone-screen-1-desktop@2x.png");
+    }
+  }
+
+  .advantages__item:nth-child(2) {
+    background-image: url("../img/advantages/iphone-screen-2-desktop.png");
+    background-size: image-size("../img/advantages/iphone-screen-2-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media @retina {
+      background-image: url("../img/advantages/iphone-screen-2-desktop@2x.png");
+    }
+  }
+
+  .advantages__item:nth-child(3) {
+    background-image: url("../img/advantages/iphone-screen-3-desktop.png");
+    background-size: image-size("../img/advantages/iphone-screen-3-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media @retina {
+      background-image: url("../img/advantages/iphone-screen-3-desktop@2x.png");
+    }
+  }
+}
 
 .advantages__title {
   .indent-normalize();
@@ -61,7 +118,7 @@
   font-weight: @font-weight-bold;
   line-height: 24px;
   color: #000000;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 35px;

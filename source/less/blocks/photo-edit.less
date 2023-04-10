@@ -28,8 +28,33 @@
 .photo-edit__photo {
   width: 100%;
   height: 374px;
-  background-image: url("../img/photo-edit-mobile.png");
+  background-image: url("../img/photo-edit/photo-edit-mobile.png");
+  background-size: image-size("../img/photo-edit/photo-edit-mobile.png");
   background-repeat: no-repeat;
+
+  @media @retina {
+    background-image: url("../img/photo-edit/photo-edit-mobile@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+    background-image: url("../img/photo-edit/photo-edit-tablet.png");
+    background-size: image-size("../img/photo-edit/photo-edit-tablet.png");
+
+    @media @retina {
+      background-image: url("../img/photo-edit/photo-edit-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+    background-image: url("../img/photo-edit/photo-edit-desktop.png");
+    background-size: image-size("../img/photo-edit/photo-edit-desktop.png");
+
+    @media @retina {
+      background-image: url("../img/photo-edit/photo-edit-desktop@2x.png");
+    }
+  }
 }
 
 .photo-edit__filters {
@@ -40,11 +65,11 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    margin-bottom: 95px;
+    margin-bottom: 120px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 135px;
+    margin-bottom: 164px;
   }
 }
 
