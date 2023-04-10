@@ -374,7 +374,7 @@
   position: absolute;
   width: 100%;
   left: 0;
-  top: 66px;
+  top: 67px;
   background-color: #283645;
 }
 .main-nav--opened {
@@ -382,7 +382,7 @@
 }
 @media (min-width: 660px) {
   .main-nav {
-    top: 110px;
+    top: 111px;
   }
 }
 @media (min-width: 960px) {
@@ -412,7 +412,7 @@
   }
 }
 .main-nav__item {
-  padding: 25px 0;
+  padding: 15px 0;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid #000000;
@@ -2057,16 +2057,37 @@
   margin: 0 auto;
 }
 .gallery__figure--best {
+  position: relative;
   margin-bottom: 20px;
   width: 320px;
   display: flex;
   flex-direction: column;
+}
+.gallery__figure--best::after {
+  content: "Панорама дня";
+  position: absolute;
+  top: 13px;
+  right: 0;
+  width: 140px;
+  height: 36px;
+  background-color: #d22856;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 660px) {
   .gallery__figure--best {
     margin-bottom: 50px;
     width: 660px;
     max-width: 1200px;
+  }
+  .gallery__figure--best::after {
+    top: 70px;
   }
 }
 @media (min-width: 960px) {
@@ -2111,7 +2132,7 @@
   .gallery__figcaption--best {
     width: 620px;
     display: grid;
-    grid-template-columns: 140px 140px;
+    grid-template-columns: 144px 140px;
     column-gap: 302px;
   }
 }
@@ -2181,7 +2202,7 @@
   border: none;
   background-image: url("../img/icons/heart.svg");
   background-position: center;
-  background-repeat: no-repeat2;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 @media (min-width: 660px) {

@@ -2,10 +2,29 @@
   margin: 0 auto;
 
   &--best {
+    position: relative;
     margin-bottom: 20px;
     width: 320px;
     display: flex;
     flex-direction: column;
+  }
+
+  &--best::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    color: #ffffff;
+    font-family: @font-main;
+    line-height: 24px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (min-width: @tablet-width) {
@@ -13,6 +32,10 @@
       margin-bottom: 50px;
       width: 660px;
       max-width: 1200px;
+    }
+
+    &--best::after {
+      top: 70px;
     }
   }
 
@@ -59,7 +82,7 @@
     &--best {
       width: 620px;
       display: grid;
-      grid-template-columns: 140px 140px;
+      grid-template-columns: 144px 140px;
       column-gap: 302px;
     }
   }
@@ -136,7 +159,7 @@
   border: none;
   background-image: url("../img/icons/heart.svg");
   background-position: center;
-  background-repeat: no-repeat2;
+  background-repeat: no-repeat;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
