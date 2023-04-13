@@ -2053,6 +2053,11 @@
 .contest-form__text {
   display: none;
 }
+@media (min-width: 960px) {
+  .contest-form__text {
+    display: inline;
+  }
+}
 .gallery__figure {
   margin: 0 auto;
 }
