@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <title>Pink</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -219,9 +219,8 @@
           </ul>
         </div>
       </section>
-      <div class="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2233195d859ff8947418a9484e8a41c0e1b95ecad38740eb090245380f372938&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
-        <div class="map__mark"></div>
+      <div class="map" id="map">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
       </div>
     </main>
     <footer class="page-footer">
@@ -267,6 +266,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/map.min.js"></script>
+    <script src="js/main-nav.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>
