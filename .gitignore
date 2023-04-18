@@ -8,3 +8,5 @@
 css/*.css
 node_modules/
 Thumbs.db
+build
+source/js/scripts.js
