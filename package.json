@@ -2,11 +2,13 @@
   "name": "pink",
   "private": true,
   "description": "Личный проект «Pink»",
+  "homepage": "https://gross01.github.io/pink-html-academy/",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
     "browser-sync": "^2.29.1",
     "del": "^6.1.1",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
@@ -29,7 +31,8 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
