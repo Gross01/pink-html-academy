@@ -96,9 +96,35 @@
 }
 
 .gallery__image {
-  .image-normalize ();
   position: relative;
   bottom: -13px;
+  width: 280px;
+  height: 180px;
+  background-color: #f2f2f2;
+
+  &--best {
+    width: 320px;
+    height: 137px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+
+    &--best {
+      width: 660px;
+      height: 509px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+
+    &--best {
+      width: 1200px;
+      height: 506px;
+    }
+  }
 }
 
 .gallery__autor {

@@ -8,6 +8,9 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -58,11 +61,11 @@
           <figcaption class="gallery__figcaption gallery__figcaption--best container">
             <p class="gallery__autor">
               <b class="gallery__name">Анна</b>
-              <time class="gallery__time">(5 минут назад)</time>
+              <span class="gallery__time">(5 минут назад)</span>
             </p>
             <p class="gallery__description gallery__description--best">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="gallery__likes">
-              <button class="gallery__like" type="submit"></button>
+              <button class="gallery__like" type="submit"><span class="visually-hidden">Поставить лайк</span></button>
               <span class="gallery__count">Нравится: 215</span>
             </div>
           </figcaption>
@@ -81,11 +84,11 @@
               <figcaption class="gallery__figcaption">
                 <p class="gallery__autor">
                   <b class="gallery__name">Левон</b>
-                  <time class="gallery__time">(5 часов назад)</time>
+                  <span class="gallery__time">(5 часов назад)</span>
                 </p>
                 <p class="gallery__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="gallery__likes">
-                  <button class="gallery__like" type="submit"></button>
+                  <button class="gallery__like" type="submit"><span class="visually-hidden">Поставить лайк</span></button>
                   <span class="gallery__count">Нравится: 356</span>
                 </div>
               </figcaption>
@@ -104,11 +107,11 @@
               <figcaption class="gallery__figcaption">
                 <p class="gallery__autor">
                   <b class="gallery__name">Антон</b>
-                  <time class="gallery__time">(12 часов назад)</time>
+                  <span class="gallery__time">(12 часов назад)</span>
                 </p>
                 <p class="gallery__description">Соседи будут рады!</p>
                 <div class="gallery__likes">
-                  <button class="gallery__like" type="submit"></button>
+                  <button class="gallery__like" type="submit"><span class="visually-hidden">Поставить лайк</span></button>
                   <span class="gallery__count">Нравится: 666</span>
                 </div>
               </figcaption>
@@ -127,11 +130,11 @@
               <figcaption class="gallery__figcaption">
                 <p class="gallery__autor">
                   <b class="gallery__name">Борис</b>
-                  <time class="gallery__time">(20 часов назад)</time>
+                  <span class="gallery__time">(20 часов назад)</span>
                 </p>
                 <p class="gallery__description">Здесь могла быть ваша цитата o высоком и вечном.</p>
                 <div class="gallery__likes">
-                  <button class="gallery__like" type="submit"></button>
+                  <button class="gallery__like" type="submit"><span class="visually-hidden">Поставить лайк</span></button>
                   <span class="gallery__count">Нравится: 215</span>
                 </div>
               </figcaption>
@@ -150,11 +153,11 @@
               <figcaption class="gallery__figcaption">
                 <p class="gallery__autor">
                   <b class="gallery__name">Сергей</b>
-                  <time class="gallery__time">(25 часов назад)</time>
+                  <span class="gallery__time">(25 часов назад)</span>
                 </p>
                 <p class="gallery__description">Самая кубанская в мире!</p>
                 <div class="gallery__likes">
-                  <button class="gallery__like" type="submit"></button>
+                  <button class="gallery__like" type="submit"><span class="visually-hidden">Поставить лайк</span></button>
                   <span class="gallery__count">Нравится: 4</span>
                 </div>
               </figcaption>
@@ -173,11 +176,11 @@
               <figcaption class="gallery__figcaption">
                 <p class="gallery__autor">
                   <b class="gallery__name">Максим</b>
-                  <time class="gallery__time">(40 часов назад)</time>
+                  <span class="gallery__time">(40 часов назад)</span>
                 </p>
                 <p class="gallery__description">Где снег-то?</p>
                 <div class="gallery__likes">
-                  <button class="gallery__like" type="submit"></button>
+                  <button class="gallery__like" type="submit"><span class="visually-hidden">Поставить лайк</span></button>
                   <span class="gallery__count">Нравится: 150</span>
                 </div>
               </figcaption>
@@ -196,11 +199,11 @@
               <figcaption class="gallery__figcaption">
                 <p class="gallery__autor">
                   <b class="gallery__name">Надежда</b>
-                  <time class="gallery__time">(45 часов назад)</time>
+                  <span class="gallery__time">(45 часов назад)</span>
                 </p>
                 <p class="gallery__description">Всем GM и взаимные лайки!</p>
                 <div class="gallery__likes">
-                  <button class="gallery__like" type="submit"></button>
+                  <button class="gallery__like" type="submit"><span class="visually-hidden">Поставить лайк</span></button>
                   <span class="gallery__count">Нравится: 2560</span>
                 </div>
               </figcaption>
@@ -212,8 +215,8 @@
         <p class="main-content__subtitle">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="photo-edit">
-        <form class="photo-edit__form" action="#">
-          <input class="visually-hidden" id="photo" name="photo" type="file">
+        <form class="photo-edit__form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="visually-hidden" id="photo" type="file">
           <label class="photo-edit__photo" for="photo"></label>
           <div class="photo-edit__wrapper">
             <div class="photo-edit__filters">
@@ -242,19 +245,22 @@
                   <svg class="photo-edit__icon photo-edit__icon--crop" width="44" height="44" viewBox="0 0 44 44">
                     <use xlink:href="img/sprite.svg#crop-icon"></use>
                   </svg>
-                  <input class="photo-edit__range" type="range" min="0" max="100" value="80">
+                  <input class="photo-edit__range" id="crop-range" type="range" name="crop" min="0" max="100" value="80">
+                  <label class="visually-hidden" for="crop-range">Обрезать фото</label>
                 </div>
                 <div class="photo-edit__item">
                   <svg class="photo-edit__icon photo-edit__icon--fill" width="48" height="43" viewBox="0 0 48 43" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#fill-icon"></use>
                   </svg>
-                  <input class="photo-edit__range" type="range" min="0" max="100" value="20">
+                  <input class="photo-edit__range" id="fill-range" type="range" name="fill" min="0" max="100" value="20">
+                  <label class="visually-hidden" for="fill-range">Заливка</label>
                 </div>
                 <div class="photo-edit__item photo-edit__item--contrast">
                   <svg class="photo-edit__icon photo-edit__icon photo-edit__icon--contrast" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#contrast-icon"></use>
                   </svg>
-                  <input class="photo-edit__range" type="range" min="0" max="100" value="60">
+                  <input class="photo-edit__range" id="contrast-range" type="range" name="contrast" min="0" max="100" value="60">
+                  <label class="visually-hidden" for="contrast-range">Контраст</label>
                 </div>
               </div>
             </div>

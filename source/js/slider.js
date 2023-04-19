@@ -47,5 +47,3 @@ thirdToggle.addEventListener('click', function () {
   secondToggle.classList.remove('slider__toggle--current')
   thirdToggle.classList.add('slider__toggle--current')
 })
-
-

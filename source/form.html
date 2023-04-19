@@ -8,6 +8,9 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -64,8 +67,8 @@
           </div>
         </div>
         <fieldset class="contest-form__achievements">
+          <legend class="contest-form__legend contest-form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
           <div class="contest-form__achievements-wrapper">
-            <legend class="contest-form__legend contest-form__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
             <label class="contest-form__label contest-form__label--checkbox">
               <input class="visually-hidden contest-form__input--checkbox" type="checkbox" name="shark-selfie" checked>
               <span class="contest-form__input-name contest-form__input-name--checkbox">Сделал селфи с акулой</span>
@@ -93,8 +96,8 @@
           </div>
         </fieldset>
         <fieldset class="contest-form__contacts">
+          <legend class="contest-form__legend contest-form__legend--contacts">Контактная информация</legend>
           <div class="contest-form__contacts-wrapper">
-            <legend class="contest-form__legend contest-form__legend--contacts">Контактная информация</legend>
             <label class="contest-form__label contest-form__label--contacts contest-form__label--tel-number">
               <span class="contest-form__span contest-form__span--contacts">Номер телефона</span>
               <input class="contest-form__text-input contest-form__text-input--contacts contest-form__text-input--tel-number" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
@@ -106,8 +109,8 @@
           </div>
         </fieldset>
         <fieldset class="contest-form__apps">
+          <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
           <div class="contest-form__apps-wrapper">
-            <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
             <label class="contest-form__label contest-form__label--radio">
               <input class="visually-hidden contest-form__input--radio" type="radio" name="app" value="IOS" checked>
               <span class="contest-form__input-name contest-form__input-name--radio">Pink для iOS</span>
@@ -123,8 +126,8 @@
           </div>
         </fieldset>
         <fieldset class="contest-form__comment">
+          <legend class="contest-form__legend contest-form__legend--textarea">Опишите свои эмоции</legend>
           <div class="contest-form__comment-wrapper">
-            <legend class="contest-form__legend contest-form__legend--textarea">Опишите свои эмоции</legend>
             <textarea class="contest-form__text-input contest-form__text-input--textarea" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </fieldset>

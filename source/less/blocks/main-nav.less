@@ -32,9 +32,9 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     width: 620px;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -47,6 +47,7 @@
   @media (min-width: @desktop-width) {
     border: none;
     padding: 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -70,7 +71,7 @@
   @media (min-width: @desktop-width) {
     text-transform: none;
     font-weight: @font-weight-normal;
-    padding: 16px 0;
+    padding: 16px 0 12px 0;
 
     &:active {
       color: fade(#ffffff, 30%);

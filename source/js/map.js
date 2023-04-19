@@ -20,7 +20,6 @@ function init() {
   map.controls.remove('trafficControl');
   map.controls.remove('typeSelector');
   map.controls.remove('fullscreenControl');
-  map.controls.remove('zoomControl');
   map.controls.remove('rulerControl');
 
   map.geoObjects.add(placemark);

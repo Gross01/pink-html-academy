@@ -16,4 +16,3 @@ toggle.addEventListener('click', function () {
     toggle.classList.add('page-header__toggle--opened')
   }
 })
-
